@@ -1,3 +1,13 @@
+#!/usr/bin/env python
+#--------========########========--------
+#	Reset Android app permissions in the /data/data foler
+#	2025-03-06	Erik Johnson - EkriirkE
+#
+#	Iterates the /data/system/packages.list file to get (and reset) the proper group permissions of each app folder
+#	Run:
+#	python reperm.py
+#
+#--------========########========--------
 import os
 
 if not (okgo:=os.path.exists(pkg:="/data/system/packages.list")):
